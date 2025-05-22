@@ -116,8 +116,7 @@ return revealed;
 }
 
 public static boolean canHide(Picture source, Picture secret) {
-return source.getWidth() >= secret.getWidth() &&
-source.getHeight() >= secret.getHeight();
+return source.getWidth() >= secret.getWidth() && source.getHeight() >= secret.getHeight();
 }
 
 public static boolean isSame(Picture pic1, Picture pic2) {
@@ -294,3 +293,4 @@ codes.add(code);
 return decodeString(codes);
 }
 }
+
